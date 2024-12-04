@@ -4,7 +4,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-function reverseArray(nums) {
+function reverseArrayInPlace(nums) {
   let start = 0;
   let end = nums.length - 1;
 
