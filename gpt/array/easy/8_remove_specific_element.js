@@ -25,7 +25,7 @@ a simple comparison for each element. Therefore, the time complexity is
 linear, where `n` is the number of elements in the input array.
 
 Space Complexity: O(n)
-- The function creates a new array `result` that, in the worst case, can have
+- The function creates a new array `removedElementArr` that, in the worst case, can have
 the same size as the input array if no elements match the target. Thus, the 
 space complexity is linear.
 
