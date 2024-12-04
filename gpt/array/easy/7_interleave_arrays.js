@@ -23,6 +23,6 @@ Time Complexity: O(n)
 - The function iterates through both arrays once (equal length), where `n` is the length of the arrays.
 
 Space Complexity: O(n)
-- The function uses additional space for the `result` array, which stores `2n` elements (all elements from both input arrays).
+- The function uses additional space for the `interleavedArr` array, which stores `2n` elements (all elements from both input arrays).
 
 */
