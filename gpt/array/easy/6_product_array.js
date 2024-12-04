@@ -1,17 +1,17 @@
 // Write a function that calculates the product of all the elements in an array.
 
 /**
- * @param {number[]} nums
+ * @param {number[]} numbers
  * @return {number}
  */
-function productArray(nums) {
-  let product = 1;
+function calculateProductOfArray(numbers) {
+  let totalProduct = 1;
 
-  for (let i = 0; i < nums.length; i++) {
-    product *= nums[i];
+  for (let i = 0; i < numbers.length; i++) {
+    totalProduct *= numbers[i];
   }
 
-  return product;
+  return totalProduct;
 }
 
 /* 
@@ -21,7 +21,7 @@ Time Complexity: O(n)
 where `n` is the number of elements in the array.
 
 Space Complexity: O(1)
-- The function uses only one variable, `product`, to store the result,
+- The function uses only one variable, `totalProduct `, to store the result,
 regardless of the size of the array.
 
 */

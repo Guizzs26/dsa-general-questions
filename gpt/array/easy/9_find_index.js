@@ -5,7 +5,7 @@
  * @param {number} target
  * @return {number}
  */
-function findIndexFirstOccurrence(nums, target) {
+function findFirstIndexOfTarget(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === target) {
       return i;

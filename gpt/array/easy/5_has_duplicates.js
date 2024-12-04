@@ -1,13 +1,13 @@
 // Write a function that checks if there are duplicate elements in an array. Return true if duplicates exist, otherwise return false.
 
 /**
- * @param {number[]} nums
+ * @param {number[]} numbers
  * @return {boolean}
  */
-function hasDuplicates(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] === nums[j]) {
+function hasDuplicates(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[i] === numbers[j]) {
         return true;
       }
     }

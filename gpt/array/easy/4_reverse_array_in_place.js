@@ -1,23 +1,23 @@
 // Write a function that takes an array and returns a new array with the elements in reverse order.
 
 /**
- * @param {number[]} nums
+ * @param {number[]} numbers
  * @return {number[]}
  */
-function reverseArrayInPlace(nums) {
-  let start = 0;
-  let end = nums.length - 1;
+function reverseArrayInPlace(numbers) {
+  let leftPointer = 0;
+  let rightPointer = numbers.length - 1;
 
-  while (start < end) {
-    let temp = nums[start];
-    nums[start] = nums[end];
-    nums[end] = temp;
+  while (leftPointer < rightPointer) {
+    let temp = numbers[leftPointer];
+    numbers[leftPointer] = numbers[rightPointer];
+    numbers[rightPointer] = temp;
 
-    start++;
-    end--;
+    leftPointer++;
+    rightPointer--;
   }
 
-  return nums;
+  return numbers;
 }
 
 /* 

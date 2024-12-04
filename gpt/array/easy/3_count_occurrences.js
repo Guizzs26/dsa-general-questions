@@ -1,20 +1,20 @@
 // Write a function that counts how many times a specific number appears in an array.
 
 /**
- * @param {number[]} nums
+ * @param {number[]} numbers
  * @param {number} target
  * @return {number}
  */
-function countOccurrences(nums, target) {
-  let count = 0;
+function countOccurrencesOfTarget(numbers, target) {
+  let occurrenceCount = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] === target) {
-      count++;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === target) {
+      occurrenceCount++;
     }
   }
 
-  return count;
+  return occurrenceCount;
 }
 
 /* 
@@ -24,7 +24,7 @@ Time Complexity: O(n)
 where `n` is the length of the array. This makes the time complexity linear.
 
 Space Complexity: O(1)
-- The function uses a single variable `count` to store the result,
+- The function uses a single variable `occurrenceCount` to store the result,
 which does not depend on the size of the input array.
 No additional space is allocated proportional to the input size.
 

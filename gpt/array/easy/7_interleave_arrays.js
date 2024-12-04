@@ -5,16 +5,16 @@
  * @param {any[]} arr2
  * @return {any[]}
  */
-function interleaveArrays(arr1, arr2) {
-  let interleavedArr = new Array(arr1.length + arr2.length);
-  let interleavedArrIndex = 0;
+function mergeArraysInterleaved(array1, array2) {
+  let interleavedArray = new Array(array1.length + array2.length);
+  let currentIndex = 0;
 
-  for (let i = 0; i < arr1.length; i++) {
-    interleavedArr[interleavedArrIndex++] = arr1[i];
-    interleavedArr[interleavedArrIndex++] = arr2[i];
+  for (let i = 0; i < array1.length; i++) {
+    interleavedArray[currentIndex++] = array1[i];
+    interleavedArray[currentIndex++] = array2[i];
   }
 
-  return interleavedArr;
+  return interleavedArray;
 }
 
 /* 
@@ -23,6 +23,6 @@ Time Complexity: O(n)
 - The function iterates through both arrays once (equal length), where `n` is the length of the arrays.
 
 Space Complexity: O(n)
-- The function uses additional space for the `interleavedArr` array, which stores `2n` elements (all elements from both input arrays).
+- The function uses additional space for the `interleavedArray` array, which stores `2n` elements (all elements from both input arrays).
 
 */
